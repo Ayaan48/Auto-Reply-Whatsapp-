@@ -1,0 +1,29 @@
+{
+  "name": "whatsapp-auto-reply",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WhatsApp auto-reply bot: rule/AI replies, call handling, voicemail capture",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "logout": "node src/logout.js",
+    "voicemails": "node src/list-voicemails.js",
+    "test": "node test/pipeline.test.js && node test/phone.test.js",
+    "stop": "node src/stop.js",
+    "restart": "node src/stop.js && node src/index.js",
+    "phone": "node src/phone/server.js",
+    "phone:pull": "node src/phone/pull.js",
+    "phone:twiml": "node src/phone/twiml-bin.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.123.0",
+    "baileys": "6.7.24",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "qrcode-terminal": "^0.12.0",
+    "twilio": "^6.1.0"
+  }
+}

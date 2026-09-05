@@ -1,0 +1,14 @@
+node_modules/
+data/auth/
+data/state.json
+data/voicemails/
+data/bot.pid
+data/bot.log
+data/bot.log.old
+.env
+
+# your own settings - copy config.example.json to start
+config.json
+
+# IDE
+.idea/
